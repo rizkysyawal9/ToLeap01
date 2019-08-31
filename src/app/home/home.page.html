@@ -1,14 +1,59 @@
+ 
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>Video</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-searchbar (ionInput) = "search($event)"></ion-searchbar>
+  <ion-item *ngFor="let user of resultArr">
+    <ion-label>
+      <ion-note style="font-weight: bold">
+        {{videos.Name}}
+      </ion-note>
+    </ion-label>
+  </ion-item>
+
+  <ion-card button= true href="./video1" >
+    <img src="./assets/icon/biolo.jpg" />
+  <!--Untuk deskripsi foto yang diupload-->
+  <ion-card-header> 
+    <ion-card-subtitle>Biologi SD Kelas II</ion-card-subtitle>
+    <ion-card-title>Anatomi Hewan</ion-card-title>
+  </ion-card-header>
+    <ion-card-content>
+      Pada pertemuan hari ini, Joseph akan membahas tentang anatomi hewan
+    </ion-card-content> 
+  </ion-card>
+
+  <ion-card>
+    <img src="./assets/icon/math.jpg" />
+  <!--Untuk deskripsi foto yang diupload-->
+  <ion-card-header> 
+    <ion-card-subtitle>Matematika SD Kelas II</ion-card-subtitle>
+    <ion-card-title>Tambah dan Kurang</ion-card-title>
+  </ion-card-header>
+    <ion-card-content>
+      Pada pertemuan hari ini, Joseph akan membahas tentang bagaimana membagi dan 
+      kurang dalam matematika sehari hari
+    </ion-card-content> 
+  </ion-card>
+
+  <ion-card >
+    <img src="./assets/icon/Bahasa.jpg" />
+  <!--Untuk deskripsi foto yang diupload-->
+  <ion-card-header> 
+    <ion-card-subtitle>Bahasa Indonesia SD Kelas II</ion-card-subtitle>
+    <ion-card-title>Bahasa Baku</ion-card-title>
+  </ion-card-header>
+    <ion-card-content>
+      Pada pertemuan hari ini, Joseph akan membahas tentang bahasa-bahasa 
+      baku sehari-hari
+    </ion-card-content> 
+  </ion-card>
 </ion-content>
+
+
+ 
+

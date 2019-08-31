@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "chat.page.scss"
+    ],
+    "names": [],
+    "file": "chat.page.css"
+}

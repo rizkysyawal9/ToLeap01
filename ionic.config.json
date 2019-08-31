@@ -1,5 +1,7 @@
 {
   "name": "ToLp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
